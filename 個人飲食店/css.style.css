@@ -1,0 +1,312 @@
+/* 顧問 */
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+body{
+  margin: 0;
+}
+h2{
+  text-align: center;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+
+  
+  
+}
+html { scroll-behavior: smooth;}
+
+
+
+
+
+
+/* ヘッダー */
+header img{
+  width:100%;
+  height:100vh;
+  object-fit: cover;
+}
+header li{
+  font-size: 16px;
+  font-family: serif;
+  
+}
+header ul{
+ display: flex;
+ gap:24px;
+}
+.abc{
+  position:relative;
+}
+.abc p{
+  position: absolute;
+  color:white;
+  top:50%;
+  left:50%;
+  font-weight: bold;
+  font-family: serif;
+  font-size: 64px;
+  /* 文字についてる文字分のずれを修正できる */
+  transform:translate(-50%,-50%) ; 
+  margin: 0;
+  padding: 0;
+}
+.abc nav{
+  position:absolute;
+  top:0;
+  right:16px;
+  filter: drop-shadow(1px 1px 2px #121212);
+  color: #fff;
+}
+
+
+
+
+
+/* メニュー */
+/* .menu{
+
+  position:relative;
+  background-attachment: fixed;
+}
+.menu img{
+  width:100%;
+  background-attachment: fixed;
+}
+.menu p{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  font-family: serif;
+  font-size: 64px;
+  font-weight: bold;
+  color:#fff;
+  background-attachment: fixed;
+} */
+.menu{
+ 
+  color:#FFF;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 64px;
+  position:relative;
+  
+  
+}
+.menu h3{
+  margin: 0;
+  background-image: url(main.jpeg);
+  background-attachment: fixed;
+
+  height:300px;
+}
+.menu p{
+  font-family: serif;
+  position:absolute;
+  top:10%;
+  left:35%;
+  /* transform: translate(-50%,-50%); */
+
+
+}
+
+.container{
+  width:calc(100% - 16px);
+  /* outline:red 2px solid; */
+  margin: 0 auto;
+
+}
+.ichiran .list{
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+main{
+ margin: 0;padding: 0;
+}
+
+
+
+
+/* パララックス */
+section{
+  height: 100%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 10px;
+  width:100%;
+margin: 0 auto;
+  box-sizing: border-box;
+  color: #FFF;
+  font-size: 5rem;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.para{
+  background-image: url(main.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:600px;
+  /* width:100%; */
+
+}
+.content{
+  background-color: #000;
+  height:300px;
+}
+
+
+
+/* りすと */
+main .zentai{
+  display: flex;
+ margin: 64px 0;
+}
+.ichiran
+{
+  width:50%;
+  padding: 0 45px;
+}
+
+.ichiran dl
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.ichiran dt{
+  width:80%;
+  text-align: left;
+border-bottom: 1px dotted #000;
+margin-bottom: 8px;;
+}
+.ichiran dd{
+  width:20%;
+text-align: right;
+margin: 0;padding: 0;
+}
+.ichiran:first-child{
+  border-right:1px solid #000;
+}
+
+
+/* アバウト */
+.about{
+  position:relative;
+}
+section{
+  height: 100%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 10px;
+  width:100%;
+margin: 0 auto;
+  box-sizing: border-box;
+  color: #FFF;
+  font-size: 5rem;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.gazou{
+  background-image: url(main2.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:300px;
+  /* width:100%; */
+
+}
+
+
+/* 説明エリア */
+.setu{
+  margin: 32px;
+ 
+}
+.setu h3{
+  text-align: center;
+}
+.setu ul{
+  display: flex;
+ flex-wrap: wrap;
+}
+.setu li{
+  width:calc(50% - 16px);
+  padding: 8px;
+  
+}
+.setu a{
+  display:block;
+text-align: center;
+
+margin: 0 40%;
+
+border:1px black solid;
+}
+
+
+
+/* ロケーション */
+.loca{
+  margin-top: 64px;
+}
+.loca section{
+ 
+  height:300px;
+  background-image: url(main3.jpg);
+  
+}
+.loca iframe{
+width: 100%;
+height:400px;
+filter:grayscale(1);
+}
+
+
+footer{
+  font-size: 8px;
+  color:gray;
+  text-align: center;
+  margin: 24px;
+}
+
+
+
+/* スマホ用画面 */
+@media(max-width:600px){
+  .menu{
+    flex-direction: column;
+   
+  }
+  .zentai{
+    flex-direction: column;
+   
+  }
+  .ichiran{
+    width:87%;
+  }
+  .about ul{
+    flex-direction: column;
+    
+  }
+  .setu li{
+    width:100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  section{
+    height:100px;
+  }
+}
